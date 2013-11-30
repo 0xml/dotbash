@@ -1,8 +1,8 @@
-alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
 
-source /usr/local/bin/virtualenvwrapper.sh
 
-eval "$(rbenv init -)"
+
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 PS1='\w \033[0;36m;)\033[0m '
 
