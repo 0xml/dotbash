@@ -4,7 +4,7 @@
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-PS1='\w \033[0;36m;)\033[0m '
+#PS1='\w \033[0;36m;)\033[0m '
 
 
 alias c='clear'
@@ -39,18 +39,18 @@ alias ports='netstat -tulanp tcp'
 alias header='curl -I'
  
 # find out if remote server supports gzip / mod_deflate or not #
- alias headerc='curl -I --compress'
+alias headerc='curl -I --compress'
 
 ## pass options to free ## 
 alias meminfo='free -m -l -t'
  
 ## get top process eating memory
- alias psmem='ps auxf | sort -nr -k 4'
- alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
   
 ## get top process eating cpu ##
-  alias pscpu='ps auxf | sort -nr -k 3'
-  alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
    
 ## Get server cpu info ##
 ##alias cpuinfo='lscpu'
